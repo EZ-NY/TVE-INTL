@@ -1,0 +1,17 @@
+{
+    "odata.metadata": "http://nos-core.cloudapp.net/FE.Core.OData.API/OData.svc/$metadata#Channels/@Element",
+    "Id": "94",
+    "AssetId": "94",
+    "Name": "Nickelodeon",
+    "ChannelId": "94",
+    "Description": null,
+    "ImageUrl": "http://zonddpps.cloudapp.net/epg/channels/Nicke.png",
+    "PosterUrl": null,
+    "ImageFile": "Nicke.png",
+    "PosterFile": "Nicke_poster.jpg",
+    "Position": 41,
+    "Type": "SD",
+    "Rating": "M3",
+    "DvbLocator": "dvb://36.2A.2BD",
+    "IsOnline": true
+}

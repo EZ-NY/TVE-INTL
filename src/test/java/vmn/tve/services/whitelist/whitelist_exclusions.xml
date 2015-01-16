@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<environment name="production" serviceProvider="Adobe" xsi:noNamespaceSchemaLocation="http://media.mtvnservices.com/hosted/mvpd/whitelisting/componentWhitelist-schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <providersList>
+    <provider id="DTV" altName="DirecTV, Direct TV, DTV" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true"/>
+    <provider id="TWC" altName="Time Warner Cable, TWC" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="24" allowWMS="true"/>
+    <provider id="serviceelectric_auth-gateway_net" altName="Service Electric, SECV, Service Electric Cablevision, Cablevision" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+            <exclusion platform="all" requestorID="all" deviceType="all"/><!-- 1 test -->
+        </exclusions>
+    </provider>
+    <provider id="auth_armstrongmywire_com" altName="Armstrong" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true"/>
+    <provider id="auth_atlanticbb_net" altName="Atlantic, Broadband" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+            <exclusion platform="android" requestorID="all" deviceType="all"/> <!-- 2 test --> 
+        </exclusions>
+    </provider>    
+    <provider id="nextech_auth-gateway_net" altName="Nex-Tech" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+             <exclusion platform="all" requestorID="nick" deviceType="all"/> <!-- 3 test -->
+        </exclusions>
+    </provider>    
+    <provider id="easton-utilities" altName="Easton Cable, Velocity, Easton Utilities" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+           <exclusion platform="android" requestorID="nick" deviceType="all"/> <!-- 4 test -->
+        </exclusions>
+    </provider>    
+    <provider id="ATMC" altName="Atlantic Telephone Membership Cooperative, ATMC" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+            <exclusion platform="android" requestorID="nick" deviceType="phone"/> <!-- 5 test -->
+        </exclusions>
+    </provider>   
+    <provider id="consolidated_auth-gateway_net" altName="Consolidated Communications, CCI" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+            <exclusion platform="all" requestorID="nick" deviceType="phone"/> <!-- 6 test -->
+        </exclusions>
+    </provider>    
+    <provider id="ANTIETAM" altName="CSchurz Communications of Maryland" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+            <exclusion platform="all" requestorID="all" deviceType="phone"/> <!-- 7 test -->
+        </exclusions>
+    </provider>
+    <provider id="Bend" altName="Bend Broadband" freePreviewAvailable="true" liveStreamAvailable="true" liveStreamTTL="86400" allowWMS="true">
+        <exclusions>
+            <exclusion platform="console" requestorID="all" deviceType="xbox"/> <!-- 8 test -->
+        </exclusions>
+    </provider>      
+  </providersList>
+  <featuresList>
+    <feature name="sm4linking">
+      <platform name="all">
+        <requestorProperties requestorID="all">
+          <property isActive="true"/>
+        </requestorProperties>
+        <requestorProperties requestorID="nick">
+          <property isActive="false"/>
+        </requestorProperties>
+        <requestorProperties requestorID="nickjr">
+          <property isActive="false"/>
+        </requestorProperties>
+      </platform>
+    </feature>    
+  </featuresList>
+</environment>

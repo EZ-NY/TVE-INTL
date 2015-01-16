@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorMapping>
+ <provider id="nos">
+  <ErrorCode code="Invalid Authorization Code">
+   <Group>authorization_error</Group>
+   <CSErrorCode>invalid_authorization_code</CSErrorCode>
+   <StatusCode>401</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Authorization Code Expired">
+   <Group>authorization_error</Group>
+   <CSErrorCode>authorization_code_expired</CSErrorCode>
+   <StatusCode>401</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Access Token expired">
+   <Group>authorization_error</Group>
+   <CSErrorCode>access_token_expired</CSErrorCode>
+   <StatusCode>401</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Invalid Access Token">
+   <Group>authorization_error</Group>
+   <CSErrorCode>invalid_access_token</CSErrorCode>
+   <StatusCode>401</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Invalid Refresh Token">
+   <Group>authorization_error</Group>
+   <CSErrorCode>invalid_refresh_token</CSErrorCode>
+   <StatusCode>401</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Refresh Token expired">
+   <Group>authorization_error</Group>
+   <CSErrorCode>refresh_token_expired</CSErrorCode>
+   <StatusCode>401</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Invalid ApiKey">
+   <Group>local_service_configuration_error</Group>
+   <CSErrorCode>invalid_client_id</CSErrorCode>
+   <StatusCode>400</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Client credentials are invalid">
+   <Group>local_service_configuration_error</Group>
+   <CSErrorCode>invalid_client_secret</CSErrorCode>
+   <StatusCode>400</StatusCode>
+  </ErrorCode>
+  <ErrorCode code="Invalid redirect_uri">
+   <Group>provider_bad_request_error</Group>
+   <CSErrorCode>invalid_redirect_uri</CSErrorCode>
+   <StatusCode>400</StatusCode>
+  </ErrorCode>
+ </provider>
+</errorMapping>

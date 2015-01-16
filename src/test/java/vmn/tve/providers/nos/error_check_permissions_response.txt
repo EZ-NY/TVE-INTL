@@ -1,0 +1,9 @@
+{
+    "odata.error": {
+        "code": "",
+        "message": {
+            "lang": "pt-PT",
+            "value": "Resource not found for the segment 'SubscribedChannels'."
+        }
+    }
+}
